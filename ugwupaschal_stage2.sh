@@ -1,6 +1,6 @@
 #TASK 1
 
-#Download the reference genome
+#Download a set of trimmed FastQ files to work withthe reference genome
 mkdir ~/dc_workshop
 cd ~/dc_workshop
 mkdir ref_genome
@@ -9,7 +9,7 @@ gunzip SLGFSK-N_231335_r1_chr5_12_17.fastq.gz
 wget https://zenodo.org/record/2582555/files/SLGFSK-N_231335_r2_chr5_12_17.fastq.gz
 gunzip SLGFSK-N_231335_r2_chr5_12_17.fastq.gz
 
-#Download a set of trimmed FastQ files to work with
+#Download the reference genome
 curl -L -o ref_genome/hg19.chr5_12_17.fa.gz https://zenodo.org/record/2582555/files/hg19.chr5_12_17.fa.gz
 
 #Create directories for the results that will be generated as part of this workflow
@@ -59,7 +59,7 @@ samtools tview results/SLGFSK-N_231335.sorted.bam ref_genome/hg19.chr5_12_17.fa
 
 #TASK 2
 
-#Download the reference genome
+#Download a set of trimmed FastQ files to work withthe reference genome
 mkdir ~/dc_workshop
 cd ~/dc_workshop
 mkdir ref_genome
@@ -68,7 +68,7 @@ gunzip SLGFSK-T_231336_r1_chr5_12_17.fastq.gz
 wget https://zenodo.org/record/2582555/files/SLGFSK-T_231336_r2_chr5_12_17.fastq.gz
 gunzip SLGFSK-T_231336_r2_chr5_12_17.fastq.gz
 
-#Download a set of trimmed FastQ files to work with
+#Download the reference genome
 curl -L -o ref_genome/hg19.chr5_12_17.fa.gz https://zenodo.org/record/2582555/files/hg19.chr5_12_17.fa.gz
 
 #Create directories for the results that will be generated as part of this workflow
